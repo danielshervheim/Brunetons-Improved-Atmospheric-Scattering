@@ -1,0 +1,16 @@
+{
+    "name": "DSS.Atmosphere.Editor",
+    "references": [
+        "DSS.Atmosphere.Runtime"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

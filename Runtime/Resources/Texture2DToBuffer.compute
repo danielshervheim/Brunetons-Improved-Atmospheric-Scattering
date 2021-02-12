@@ -1,0 +1,22 @@
+﻿// Dan Shervheim
+// danielshervheim.com
+// August 2019
+
+RWTexture2D<float4> src;
+RWStructuredBuffer<float4> dst;
+
+uint srcWidth;
+uint srcHeight;
+
+#pragma kernel CSMain
+[numthreads(8, 8, 1)]
+void CSMain(uint2 id : SV_DispatchThreadID)
+{
+	float r = (float)id.x / (float)(srcWidth - 1);
+	float g = (float)id.y / (float)(srcHeight - 1);
+
+	if (id.x < srcWidth && id.y < srcHeight)
+	{
+		dst[id.x + (srcWidth * id.y)] = src[id];  // float4(r, g, 1, 1);
+	}
+}

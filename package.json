@@ -1,0 +1,17 @@
+{
+    "name": "com.dss.atmosphere",
+    "displayName": "Atmosphere",
+    "version": "1.0.0",
+    "unity": "2018.3",
+    "description": "A physically-based atmospheric skybox. Based on work by Eric Bruneton and scrawk.",
+    "keywords": [
+        "atmosphere",
+        "skybox",
+        "sky"
+    ],
+    "author": {
+        "name" : "Dan Shervheim",
+        "email" : "danielshervheim@gmail.com",
+        "url" : "http://danielshervheim.com/"
+    }
+}
